@@ -1,0 +1,258 @@
+.workshops {
+  background: #f8f9fa;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.workshops-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.workshops h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.workshops h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(45deg, #00a8ff, #00ff88);
+  border-radius: 2px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #00a8ff;
+  margin-bottom: 1rem;
+}
+
+.stat-count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, #00a8ff, #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.workshops {
+  background: #f8f9fa;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.workshops-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.workshops h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.workshops h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(45deg, #00a8ff, #00ff88);
+  border-radius: 2px;
+}
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+.workshop-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.workshop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 168, 255, 0.2);
+}
+
+.workshop-image {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 15px 15px 0 0;
+}
+
+.workshop-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.workshop-content {
+  padding: 1.5rem 2rem;
+  text-align: left;
+}
+
+.workshop-card h3 {
+  color: #00a8ff;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.description {
+  color: #444;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-tag {
+  background-color: #e6f7ff;
+  color: #00a8ff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.enroll-btn {
+  background: linear-gradient(45deg, #00a8ff, #00ff88);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.enroll-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 168, 255, 0.3);
+}
+
+.enroll-icon {
+  font-size: 1.2rem;
+}
+
+
+
+.duration {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.description {
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.participants {
+  color: #00a8ff;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .workshops {
+    padding: 60px 0;
+  }
+
+  .workshops h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem;
+  }
+
+  .stat-count {
+    font-size: 2rem;
+  }
+
+  .workshop-grid {
+    grid-template-columns: 1fr;
+  }
+}
