@@ -1,0 +1,460 @@
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Modal Container */
+.container {
+  background: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.closeButton:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.collegeName {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.galleryImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.galleryImage:hover {
+  transform: scale(1.05);
+}
+
+/* Content Sections */
+.section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #ffffff; /* White background for sections */
+  border-radius: 16px; /* Rounded edges for the section */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Light shadow for subtle depth */
+}
+
+.section h3 {
+  font-size: 1.25rem;
+  color: #3b82f6;
+  margin-bottom: 0.75rem;
+}
+
+/* Animated List Items */
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  background: #f9fafb; /* Light background for list items */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.list li:hover {
+  transform: translateY(-3px);
+  background: #e0f2fe;
+}
+
+.list li:before {
+  content: "✔";
+  color: #10b981;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  animation: bounce 0.6s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.list li p {
+  font-size: 1rem;
+  color: #334155;
+}
+
+
+/* Technologies Grid */
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.techItem {
+  background: #f1f5f9;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: #334155;
+  transition: all 0.2s ease;
+}
+
+.techItem:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  padding: 0.75rem 0;
+  margin-bottom: 0.5rem;
+  color: #334155;
+  display: flex;
+  align-items: center;
+}
+
+.list li:before {
+  content: "•";
+  color: #3b82f6;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+/* Impact Grid */
+.impactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.impactItem {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.impactItem:hover {
+  transform: translateY(-4px);
+}
+
+.impactItem h4 {
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.impactItem p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Testimonials */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.testimonial {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.testimonial p {
+  color: #334155;
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.testimonialAuthor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.testimonialAuthor strong {
+  color: #0f172a;
+}
+
+.testimonialAuthor span {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+
+
+/* Responsive Design */
+/* Mobile-first Design Adjustments */
+@media (max-width: 768px) {
+  /* Overlay Padding with Fade-in Animation */
+  .overlay {
+    padding: 1rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Modern Container with White Background */
+  .container {
+    padding: 1.5rem;
+    background: #ffffff; /* White background for a clean look */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    animation: slideUp 0.5s ease-in-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(20%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Header Section */
+  .header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .collegeName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1d4ed8;
+  }
+
+  .date {
+    font-size: 1rem;
+    color: #64748b;
+  }
+
+  /* Gallery with Hover Effect */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .galleryImage {
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .galleryImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Section with White Background */
+  .section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #ffffff; /* White background for sections */
+    border-radius: 16px; /* Rounded edges for the section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Light shadow for subtle depth */
+  }
+
+  .section h3 {
+    font-size: 1.25rem;
+    color: #3b82f6;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Animated List Items */
+  .list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    background: #f9fafb; /* Light background for list items */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+
+  .list li:hover {
+    transform: translateY(-3px);
+    background: #e0f2fe;
+  }
+
+  .list li:before {
+    content: "✔";
+    color: #10b981;
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+    animation: bounce 0.6s infinite alternate;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-5px);
+    }
+  }
+
+  .list li p {
+    font-size: 1rem;
+    color: #334155;
+  }
+
+  /* Testimonials Carousel */
+  .testimonials {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .testimonial {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .testimonial:hover {
+    transform: scale(1.05);
+  }
+
+  .testimonial p {
+    font-size: 0.95rem;
+    color: #334155;
+  }
+
+  .testimonialAuthor strong {
+    font-size: 1rem;
+    color: #1d4ed8;
+  }
+
+  /* Impact Grid with Animation */
+  .impactGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlide 0.5s forwards;
+  }
+
+  @keyframes fadeInSlide {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .impactItem {
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 16px; /* Rounded corners for impact items */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}
+

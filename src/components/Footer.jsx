@@ -21,7 +21,10 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>&copy; 2024 JKV Robotics Research Lab. All rights reserved.</p>
+
+        
       </div>
+
     </footer>
   );
 };

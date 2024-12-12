@@ -1,0 +1,24 @@
+.workshop-list {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px; /* Add some space between the title and grid */
+}
+
+.workshop-list h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.workshop-list h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Adjust the position to place the line below the text */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; /* Adjust the width as needed */
+    height: 4px;
+    background: linear-gradient(45deg, #00a8ff, #00ff88);
+    border-radius: 2px;
+}
