@@ -58,7 +58,7 @@ const Gallery = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        <h2 className="gallery-title">Research Gallery</h2>
+        {/* <h2 className="gallery-title">Research Gallery</h2> */}
         <p className="gallery-subtitle">Explore our groundbreaking research projects and discoveries</p>
       </motion.div>
 

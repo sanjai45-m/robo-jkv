@@ -90,6 +90,10 @@ const WorkshopDetails = ({ workshop, onClose }) => {
                 <h3>Workshop Overview</h3>
                 <p>{aboutWorkshopDetails.description || 'No description available'}</p>
               </motion.div>
+              <motion.div variants={itemVariants} className={styles.section}>
+                <h3>Workshop Objective</h3>
+                <p>{aboutWorkshopDetails.objective || 'No Objective available'}</p>
+              </motion.div>
 
               <motion.div variants={itemVariants} className={styles.section}>
                 <h3>Technologies Used</h3>
